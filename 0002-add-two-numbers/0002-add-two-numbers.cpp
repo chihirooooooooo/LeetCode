@@ -13,28 +13,6 @@ public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* currentForAnswer = new ListNode();
         ListNode* answer = currentForAnswer;
-        ListNode* previous = NULL;
-        ListNode* next = NULL;
-        /*while(l1 != NULL){
-            next = l1 -> next;
-            l1 -> next = previous;
-            previous = l1;
-            if(next == NULL){
-                break;
-            }
-            l1 = next;
-        }
-        previous = NULL;
-        next = NULL;
-        while(l2 != NULL){
-            next = l2 -> next;
-            l2 -> next = previous;
-            previous = l2;
-            if(next == NULL){
-                break;
-            }
-            l2 = next;
-        }*/
         int carry = 0;
         while(l1 != NULL || l2 != NULL){
             if(l1 != NULL && l2 != NULL){
